@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+     
     const sections = {
         "about-link": document.getElementById("about-me"),
         "projects-link": document.getElementById("projects"),
