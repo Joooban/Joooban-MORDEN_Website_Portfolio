@@ -65,6 +65,14 @@
                      <p class="project-title">Term Schedule Table</p>
                     <button class="project-btn" title="Learn more about Term Schedule Table" onclick="openModal('Term Schedule Table', 'The Term Schedule Table is a static HTML project that displays my current second-term schedule. This assignment was designed to help us practice HTML table elements and improve our understanding of table tags. ', 'term.png', 'https://github.com/Joooban/Joooban.github.io.git')">Learn More</button>
                 </div>
+                <div class="project-card">
+                     <p class="project-title">Kitchen Sentinel</p>
+                    <button class="project-btn" title="Learn more about Kitchen Sentinel" onclick="openModal('Kitchen Sentinel Table', 'Kitchen Sentinel is our smart IoT-based kitchen safety system designed to assist elderly users and caregivers by detecting gas leaks, flames, and motion inactivity.', 'KitchenSentinel.png', 'https://github.com/vennDiagramm/Kitchen_Sentinel_Smart_Stove_and_Gas_Leak_Alert_System.git')">Learn More</button>
+                </div>
+                <div class="project-card">
+                     <p class="project-title">MMCMate</p>
+                    <button class="project-btn" title="Learn more about MMCMate" onclick="openModal('MMCMate Table', 'MMCMate is an AI-powered chatbot developed to assist students of Mapúa Malayan Colleges Mindanao (Mapúa MCM) with queries related to school policies, including rules and regulations.', 'mmcmate.png', 'https://github.com/vennDiagramm/MMCMate_An_AI_Chatbot_for_School_Policy_Assistance.git')">Learn More</button>
+                </div>                
             </div>
         </div>
         <div id="projectModal" class="modal">
@@ -79,7 +87,7 @@
             </div>
         </div>
  
-        <div class="container3" id="recognition" style="display: none;">
+        <div class="container3" id="recognition">
             <h2>Affiliations</h2>
             <div class="affiliations">
                 <div class="affiliation">
@@ -103,19 +111,72 @@
             </div>
         
             <h2>Certifications</h2>
-            <div class="certifications">
-                <div class="certification">
-                    <img src="mos.png" alt="Microsoft Excel Office Certification" class="certImg_img">
-                    <p><strong> Microsoft Excel Office Specialist</strong></p>
+            <div class="carousel-container">
+                <button class="carousel-arrow prev" onclick="prevSlide()">❮</button>
+                <div class="carousel-wrapper" id="carouselWrapper">
+                    <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="mos.png" alt="Microsoft Excel Office Certification" class="certImg_img">
+                            <p><strong>Microsoft Excel Office Specialist</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="datascience.png" alt="datascience" class="certImg_img">
+                            <p><strong>Data Science Certification</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="java.png" alt="java" class="certImg_img">
+                            <p><strong>Software Programming Certification</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hc1.png" alt="java" class="certImg_img">
+                            <p><strong>Foundations of User Experience (UX) Design</strong></p>
+                        </div>
+                    </div>
+                                        <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hc2.png" alt="java" class="certImg_img">
+                            <p><strong>Start the UX Design Process: Empathize, Define, and Ideate</strong></p>
+                        </div>
+                    </div>
+                                        <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hc3.png" alt="java" class="certImg_img">
+                            <p><strong>Build Wireframes and Low-Fidelity Prototypes</strong></p>
+                        </div>
+                    </div>
+                                        <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hci4.png" alt="java" class="certImg_img">
+                            <p><strong>Conduct UX Research and Test Early Concepts</strong></p>
+                        </div>
+                    </div>
+                                        <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hci4.png" alt="java" class="certImg_img">
+                            <p><strong>Create High-Fidelity Designs and Prototypes in Figma</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="certification">
+                            <img src="hci5.png" alt="java" class="certImg_img">
+                            <p><strong>Create High-Fidelity Designs and Prototypes in Figma:</strong></p>
+                        </div>
+      
+                    </div>                    
                 </div>
-                <div class="certification">
-                    <img src="datascience.png" alt="datascience" class="certImg_img">
-                    <p><strong>Data Science Certification</strong></p>
-                </div>
-                <div class="certification">
-                    <img src="java.png" alt="java" class="certImg_img">
-                    <p><strong>Software Programming Certification</strong></p>
-                </div>
+                <button class="carousel-arrow next" onclick="nextSlide()">❯</button>
+            </div>
+            
+            <div class="carousel-nav">
+                <span class="carousel-dot active" onclick="currentSlide(1)"></span>
+                <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                <span class="carousel-dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
         
@@ -125,6 +186,7 @@
                 <div class="close">&times;</div>
             </div>
         </div>
+
         
         
 
